@@ -15,14 +15,7 @@ An ASP.NET Core MVC web app for managing tutors, students, and sessions.
 
 ## 🛠️ Getting Started
 
-### 1. 📦 Clone the Repository
-
-```bash
-git clone https://github.com/your-username/TutorConnect.git
-cd TutorConnect
-```
-
-> Replace `your-username` with your actual GitHub username.
+### 1. 📦 Fork then Clone the Repository
 
 ---
 
