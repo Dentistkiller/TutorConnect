@@ -1,0 +1,33 @@
+﻿@model IEnumerable<TutorConnect.Models.TutorSession>
+
+@{
+    ViewData["Title"] = "All Tutor Sessions";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Session Date</th>
+            <th>Duration</th>
+            <th>Tutor</th>
+            <th>Subject</th>
+            <th>Student</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var session in Model)
+        {
+            <tr>
+                <td>@session.SessionDate.ToString("yyyy-MM-dd HH:mm")</td>
+                <td>@session.DurationMinutes mins</td>
+                <td>@session.TutorName</td>
+                <td>@session.TutorSubject</td>
+                <td>@session.StudentName</td>
+                <td>@session.StudentEmail</td>
+            </tr>
+        }
+    </tbody>
+</table>
